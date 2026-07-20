@@ -22,61 +22,64 @@
 
 <header>
 
-    <div class="logo">
-        <img src="image/logo.png" alt="ICONWEAR Logo">
-    </div>
+<div class="logo">
+<img src="image/logo.png" alt="ICONWEAR Logo">
+</div>
 
+<div class="menu-btn">
 
-    <nav>
+<i class="fa-solid fa-bars"></i>
 
-        <a href="#">Home</a>
+</div>
+<nav>
 
-        <a href="#products">Shop</a>
+<a href="#">Home</a>
+<a href="#products">Shop</a>
+<a href="#categories">Collection</a>
+<a href="#contact">Contact</a>
 
-        <a href="#categories">Collection</a>
+<i class="fa-solid fa-magnifying-glass icon"></i>
+<i class="fa-regular fa-heart icon"></i>
+<div class="cart-icon" onclick="openCart()">
 
-        <a href="#contact">Contact</a>
+<i class="fa-solid fa-cart-shopping icon"></i>
 
+<span id="cart-count">0</span>
 
-        <i class="fa-solid fa-magnifying-glass icon"></i>
+</div>
+<i class="fa-regular fa-user icon"></i>
 
-        <i class="fa-regular fa-heart icon"></i>
-
-        <i class="fa-solid fa-cart-shopping icon"></i>
-
-        <i class="fa-regular fa-user icon"></i>
-
-    </nav>
+</nav>
 
 </header>
 
 
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero">
 
-    <div>
+<div>
 
-        <h1>
-            STREET<br>
-            STYLE
-        </h1>
-
-
-        <p>
-            Premium fashion for the new generation.
-        </p>
+<h1>
+STREET<br>
+STYLE
+<span>ICONWEAR</span>
+</h1>
 
 
-        <a href="#products" class="shop-btn">
-            SHOP NOW
-        </a>
+<p>
+Premium fashion for the new generation.
+</p>
 
 
-    </div>
+<a href="#products" class="shop-btn">
+SHOP NOW
+</a>
 
+
+</div>
 
 </section>
 
@@ -84,10 +87,10 @@
 
 
 
-<!-- CATEGORY SECTION -->
+
+<!-- CATEGORY -->
 
 <section class="categories" id="categories">
-
 
 <h2>
 SHOP BY CATEGORY
@@ -97,43 +100,42 @@ SHOP BY CATEGORY
 <div class="category-box">
 
 
-    <div class="category-card">
+<div class="category-card">
 
-        <img src="image/shirt.jpg" alt="T-Shirts">
+<img src="image/shirt.jpg" alt="T-Shirts">
 
-        <h3>
-            T-Shirts
-        </h3>
-
-    </div>
-
-
-
-    <div class="category-card">
-
-        <img src="image/jeans.jpg" alt="Jeans">
-
-        <h3>
-            Jeans
-        </h3>
-
-    </div>
-
-
-
-    <div class="category-card">
-
-        <img src="image/shirt2.jpg" alt="Oversized">
-
-        <h3>
-            Oversized
-        </h3>
-
-    </div>
-
+<h3>
+T-Shirts
+</h3>
 
 </div>
 
+
+
+<div class="category-card">
+
+<img src="image/jeans.jpg" alt="Jeans">
+
+<h3>
+Jeans
+</h3>
+
+</div>
+
+
+
+<div class="category-card">
+
+<img src="image/shirt2.jpg" alt="Oversized">
+
+<h3>
+Oversized
+</h3>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -142,24 +144,21 @@ SHOP BY CATEGORY
 
 
 
-<!-- PRODUCTS SECTION -->
+<!-- PRODUCTS -->
 
 <section class="products" id="products">
-
 
 <h2>
 NEW COLLECTION
 </h2>
 
 
-
 <div class="box">
-
 
 
 <div class="card">
 
-<img src="image/shirt.jpg" alt="Shirt">
+<img src="image/shirt.jpg">
 
 <h3>
 Oversized Shirt
@@ -168,20 +167,17 @@ Oversized Shirt
 <p>
 ₹999
 </p>
-
-<button>
-Buy Now
+<button onclick="addCart()">
+ADD TO CART
 </button>
 
 </div>
 
 
 
-
-
 <div class="card">
 
-<img src="image/jeans.jpg" alt="Jeans">
+<img src="image/jeans.jpg">
 
 <h3>
 Street Jeans
@@ -191,8 +187,8 @@ Street Jeans
 ₹1499
 </p>
 
-<button>
-Buy Now
+<button onclick="addCart()">
+ADD TO CART
 </button>
 
 </div>
@@ -200,10 +196,9 @@ Buy Now
 
 
 
-
 <div class="card">
 
-<img src="image/shirt2.jpg" alt="Urban Style">
+<img src="image/shirt2.jpg">
 
 <h3>
 Urban Style
@@ -212,17 +207,14 @@ Urban Style
 <p>
 ₹1199
 </p>
-
-<button>
-Buy Now
+<button onclick="addCart()">
+ADD TO CART
 </button>
 
 </div>
 
 
-
 </div>
-
 
 </section>
 
@@ -232,10 +224,148 @@ Buy Now
 
 
 
-<!-- ABOUT SECTION -->
+<!-- TRENDING -->
+
+<section class="trending">
+
+<h2>
+TRENDING NOW
+</h2>
+
+
+<div class="trend-box">
+
+
+<div class="trend-card">
+
+<img src="image/shirt.jpg">
+
+<h3>
+Hoodies
+</h3>
+
+<p>
+Street Style Collection
+</p>
+
+</div>
+
+
+
+<div class="trend-card">
+
+<img src="image/jeans.jpg">
+
+<h3>
+Cargo Pants
+</h3>
+
+<p>
+Urban Fashion
+</p>
+
+</div>
+
+
+
+<div class="trend-card">
+
+<img src="image/shirt2.jpg">
+
+<h3>
+Sneakers
+</h3>
+
+<p>
+New Generation Style
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<h2>
+WHY CHOOSE ICONWEAR
+</h2>
+
+
+<div class="feature-box">
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-shirt"></i>
+
+<h3>
+Premium Quality
+</h3>
+
+<p>
+High quality fabric with modern streetwear designs.
+</p>
+
+</div>
+
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>
+Fast Delivery
+</h3>
+
+<p>
+Quick and secure delivery at your doorstep.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+Secure Payment
+</h3>
+
+<p>
+Safe and trusted payment experience.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ABOUT -->
 
 <section class="about">
-
 
 <h2>
 About ICONWEAR
@@ -243,12 +373,74 @@ About ICONWEAR
 
 
 <p>
-
 ICONWEAR is a premium streetwear brand focused on modern fashion,
 comfort, and quality. Our mission is to deliver stylish clothing
 for every generation.
-
 </p>
+
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact">
+
+<h2>
+CONTACT ICONWEAR
+</h2>
+
+
+<div class="contact-box">
+
+
+<div class="contact-card">
+
+<i class="fa-brands fa-instagram"></i>
+
+<h3>
+Instagram
+</h3>
+
+<p>
+@iconwear26
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h3>
+WhatsApp
+</h3>
+
+<p>
++91 XXXXX XXXXX
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>
+Email
+</h3>
+
+<p>
+support@iconwear.com
+</p>
+
+</div>
+
+
+</div>
 
 
 </section>
@@ -257,18 +449,112 @@ for every generation.
 
 
 
-
+<!-- FOOTER -->
 <!-- FOOTER -->
 
-<footer id="contact">
+<footer>
+
+<div class="footer-box">
+
+
+<div class="footer-brand">
+
+<h2>
+ICONWEAR
+</h2>
 
 <p>
-© 2026 ICONWEAR
+Premium streetwear for the new generation.
 </p>
 
+</div>
+
+
+
+<div class="footer-links">
+
+<h3>
+Quick Links
+</h3>
+
+<a href="#">Home</a>
+
+<a href="#products">Shop</a>
+
+<a href="#categories">Collection</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+
+
+<div class="footer-social">
+
+<h3>
+Follow Us
+</h3>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-facebook"></i>
+
+<i class="fa-brands fa-twitter"></i>
+
+</div>
+
+
+</div>
+
+
+
+<p class="copyright">
+© 2026 ICONWEAR | All Rights Reserved
+</p>
+
+
 </footer>
+<!-- CART SIDEBAR -->
+
+<div class="cart-sidebar" id="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>
+        Your Cart
+        </h2>
+
+        <span onclick="closeCart()">
+        ✖
+        </span>
+
+    </div>
 
 
+    <div id="cart-items">
+
+        <p>
+        Your cart is empty
+        </p>
+
+    </div>
+
+
+    <div class="cart-total">
+
+        Total: ₹<span id="cart-total">0</span>
+
+    </div>
+
+
+    <button class="checkout-btn">
+        CHECKOUT
+    </button>
+
+
+</div>
+<script src="script.js"></script>
 
 </body>
 
