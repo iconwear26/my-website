@@ -1,561 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICONWEAR | Premium Fashion</title>
 
-<title>ICONWEAR | Streetwear</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+<!-- TOP BAR -->
+<div class="top-bar">
+    FREE SHIPPING ON ORDERS OVER ₹1999
+</div>
+
 
 <!-- HEADER -->
-
 <header>
 
-<div class="logo">
-<img src="image/logo.png" alt="ICONWEAR Logo">
+    <div class="logo">
+    <img src="image/logo.png" alt="ICONWEAR">
 </div>
+    
 
-<div class="menu-btn">
+    <nav id="navbar">
+        <a href="#home">HOME</a>
+        <a href="#shop">SHOP</a>
+        <a href="#men">MEN</a>
+        <a href="#women">WOMEN</a>
+        <a href="#new">NEW ARRIVALS</a>
+        <a href="#about">ABOUT</a>
+    </nav>
 
-<i class="fa-solid fa-bars"></i>
-
-</div>
-<nav>
-
-<a href="#">Home</a>
-<a href="#products">Shop</a>
-<a href="#categories">Collection</a>
-<a href="#contact">Contact</a>
-
-<i class="fa-solid fa-magnifying-glass icon"></i>
-<i class="fa-regular fa-heart icon"></i>
-<div class="cart-icon" onclick="openCart()">
-
-<i class="fa-solid fa-cart-shopping icon"></i>
-
-<span id="cart-count">0</span>
-
-</div>
-<i class="fa-regular fa-user icon"></i>
-
-</nav>
+    <div class="icons">
+        <span onclick="openSearch()">⌕</span>
+        <span>♡</span>
+        <span>🛒</span>
+        <span class="menu" onclick="toggleMenu()">☰</span>
+    </div>
 
 </header>
 
 
+<!-- SEARCH BOX -->
+<div id="searchBox" class="search-box">
 
+    <input 
+        type="text" 
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+    >
 
-<!-- HERO -->
-
-<section class="hero">
-
-<div>
-
-<h1>
-STREET<br>
-STYLE
-<span>ICONWEAR</span>
-</h1>
-
-
-<p>
-Premium fashion for the new generation.
-</p>
-
-
-<a href="#products" class="shop-btn">
-SHOP NOW
-</a>
-
+    <span onclick="closeSearch()">✕</span>
 
 </div>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <img src="images/hero.jpg" alt="ICONWEAR Fashion">
+
+    <div class="hero-content">
+
+        <p>ICONWEAR COLLECTION</p>
+
+        <h1>
+            TIMELESS<br>
+            STYLE
+        </h1>
+
+        <p class="hero-text">
+            Discover our latest premium fashion collection.
+        </p>
+
+        <a href="#shop" class="btn">
+            SHOP NOW
+        </a>
+
+    </div>
 
 </section>
 
 
+<!-- COLLECTION INTRO -->
+<section class="intro">
 
+    <p>ICONWEAR</p>
 
+    <h2>
+        ELEVATE YOUR EVERYDAY STYLE
+    </h2>
 
-
-<!-- CATEGORY -->
-
-<section class="categories" id="categories">
-
-<h2>
-SHOP BY CATEGORY
-</h2>
-
-
-<div class="category-box">
-
-
-<div class="category-card">
-
-<img src="image/shirt.jpg" alt="T-Shirts">
-
-<h3>
-T-Shirts
-</h3>
-
-</div>
-
-
-
-<div class="category-card">
-
-<img src="image/jeans.jpg" alt="Jeans">
-
-<h3>
-Jeans
-</h3>
-
-</div>
-
-
-
-<div class="category-card">
-
-<img src="image/shirt2.jpg" alt="Oversized">
-
-<h3>
-Oversized
-</h3>
-
-</div>
-
-
-</div>
+    <span>
+        Premium clothing designed for modern individuals.
+    </span>
 
 </section>
 
 
+<!-- FEATURED COLLECTION -->
+<section class="collection" id="shop">
+
+    <div class="collection-card large">
+
+        <img src="image/product1.jpg" alt="Men Fashion">
+
+        <div class="card-content">
+
+            <h2>MEN'S COLLECTION</h2>
+
+            <a href="#men">
+                DISCOVER MORE →
+            </a>
+
+        </div>
+
+    </div>
 
 
+    <div class="collection-card">
+
+        <img src="image/product2.jpg" alt="Women's Fashion">
+
+        <div class="card-content">
+
+            <h2>WOMEN'S COLLECTION</h2>
+
+            <a href="#women">
+                SHOP NOW →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="collection-card">
+
+        <img src="image/product3.jpg" alt="New Arrivals">
+
+        <div class="card-content">
+
+            <h2>NEW ARRIVALS</h2>
+
+            <a href="#new">
+                EXPLORE →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT BANNER -->
+<section class="about-banner" id="about">
+
+    <div>
+
+        <p>THE ICONWEAR EXPERIENCE</p>
+
+        <h2>
+            DESIGNED FOR<br>
+            YOUR ICONIC MOMENTS
+        </h2>
+
+        <a href="#shop" class="btn">
+            EXPLORE COLLECTION
+        </a>
+
+    </div>
+
+</section>
 
 
 <!-- PRODUCTS -->
+<section class="products" id="new">
 
-<section class="products" id="products">
+    <div class="section-title">
 
-<h2>
-NEW COLLECTION
-</h2>
+        <p>SHOP OUR EDIT</p>
 
+        <h2>NEW ARRIVALS</h2>
 
-<div class="box">
-
-
-<div class="card">
-
-<img src="image/shirt.jpg">
-
-<h3>
-Oversized Shirt
-</h3>
-
-<p>
-₹999
-</p>
-<button onclick="addCart('Oversized Shirt',999,'image/shirt.jpg')">
-ADD TO CART
-</button>
-
-</div>
+    </div>
 
 
+    <div class="product-grid">
 
-<div class="card">
 
-<img src="image/jeans.jpg">
+        <div class="product-card">
 
-<h3>
-Street Jeans
-</h3>
+            <div class="product-image">
 
-<p>
-₹1499
-</p>
+                <img src="images/product1.jpg" alt="Classic Jacket">
 
-<button onclick="addCart('Street Jeans',1499,'image/jeans.jpg')">
-ADD TO CART
-</button>
+                <button onclick="addToCart('Classic Jacket')">
+                    ADD TO BAG
+                </button>
 
-</div>
+            </div>
+
+            <h3>CLASSIC JACKET</h3>
+
+            <p>₹3,999</p>
+
+        </div>
 
 
 
+        <div class="product-card">
 
-<div class="card">
+            <div class="product-image">
 
-<img src="image/shirt2.jpg">
+                <img src="images/product2.jpg" alt="Premium Shirt">
 
-<h3>
-Urban Style
-</h3>
+                <button onclick="addToCart('Premium Shirt')">
+                    ADD TO BAG
+                </button>
 
-<p>
-₹1199
-</p>
-<button onclick="addCart('Urban Style',1199,'image/shirt2.jpg')">
-ADD TO CART
-</button>
+            </div>
 
-</div>
+            <h3>PREMIUM SHIRT</h3>
 
+            <p>₹2,499</p>
 
-</div>
-
-</section>
+        </div>
 
 
 
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="images/product3.jpg" alt="Modern Blazer">
+
+                <button onclick="addToCart('Modern Blazer')">
+                    ADD TO BAG
+                </button>
+
+            </div>
+
+            <h3>MODERN BLAZER</h3>
+
+            <p>₹4,999</p>
+
+        </div>
 
 
 
+        <div class="product-card">
 
-<!-- TRENDING -->
+            <div class="product-image">
 
-<section class="trending">
+                <img src="images/product4.jpg" alt="Essential T-Shirt">
 
-<h2>
-TRENDING NOW
-</h2>
+                <button onclick="addToCart('Essential T-Shirt')">
+                    ADD TO BAG
+                </button>
 
+            </div>
 
-<div class="trend-box">
+            <h3>ESSENTIAL T-SHIRT</h3>
 
+            <p>₹1,499</p>
 
-<div class="trend-card">
-
-<img src="image/shirt.jpg">
-
-<h3>
-Hoodies
-</h3>
-
-<p>
-Street Style Collection
-</p>
-
-</div>
+        </div>
 
 
-
-<div class="trend-card">
-
-<img src="image/jeans.jpg">
-
-<h3>
-Cargo Pants
-</h3>
-
-<p>
-Urban Fashion
-</p>
-
-</div>
-
-
-
-<div class="trend-card">
-
-<img src="image/shirt2.jpg">
-
-<h3>
-Sneakers
-</h3>
-
-<p>
-New Generation Style
-</p>
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- SOCIAL SECTION -->
+<section class="social">
 
+    <p>FOLLOW OUR JOURNEY</p>
 
+    <h2>@ICONWEAR</h2>
 
+    <div class="social-grid">
 
+        <img src="images/product1.jpg">
+        <img src="images/product2.jpg">
+        <img src="images/product3.jpg">
+        <img src="images/product4.jpg">
 
-<!-- FEATURES -->
-
-<section class="features">
-
-<h2>
-WHY CHOOSE ICONWEAR
-</h2>
-
-
-<div class="feature-box">
-
-
-<div class="feature-card">
-
-<i class="fa-solid fa-shirt"></i>
-
-<h3>
-Premium Quality
-</h3>
-
-<p>
-High quality fabric with modern streetwear designs.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<i class="fa-solid fa-truck-fast"></i>
-
-<h3>
-Fast Delivery
-</h3>
-
-<p>
-Quick and secure delivery at your doorstep.
-</p>
-
-</div>
-
-
-
-
-<div class="feature-card">
-
-<i class="fa-solid fa-shield-halved"></i>
-
-<h3>
-Secure Payment
-</h3>
-
-<p>
-Safe and trusted payment experience.
-</p>
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- NEWSLETTER -->
+<section class="newsletter">
 
+    <h2>JOIN THE ICONWEAR WORLD</h2>
 
+    <p>
+        Subscribe for new collections, exclusive offers and updates.
+    </p>
 
+    <div class="subscribe">
 
+        <input 
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+        >
 
-<!-- ABOUT -->
+        <button onclick="subscribe()">
+            SUBSCRIBE
+        </button>
 
-<section class="about">
-
-<h2>
-About ICONWEAR
-</h2>
-
-
-<p>
-ICONWEAR is a premium streetwear brand focused on modern fashion,
-comfort, and quality. Our mission is to deliver stylish clothing
-for every generation.
-</p>
-
-
-</section>
-
-<!-- CONTACT SECTION -->
-
-<section class="contact">
-
-<h2>
-CONTACT ICONWEAR
-</h2>
-
-
-<div class="contact-box">
-
-
-<div class="contact-card">
-
-<i class="fa-brands fa-instagram"></i>
-
-<h3>
-Instagram
-</h3>
-
-<p>
-@iconwear26
-</p>
-
-</div>
-
-
-
-<div class="contact-card">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-<h3>
-WhatsApp
-</h3>
-
-<p>
-+91 XXXXX XXXXX
-</p>
-
-</div>
-
-
-
-<div class="contact-card">
-
-<i class="fa-solid fa-envelope"></i>
-
-<h3>
-Email
-</h3>
-
-<p>
-support@iconwear.com
-</p>
-
-</div>
-
-
-</div>
-
+    </div>
 
 </section>
-
-
-
 
 
 <!-- FOOTER -->
-<!-- FOOTER -->
-
 <footer>
 
-<div class="footer-box">
+    <div class="footer-logo">
+        ICONWEAR
+    </div>
 
+    <div class="footer-links">
 
-<div class="footer-brand">
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#">CONTACT</a>
+        <a href="#">PRIVACY POLICY</a>
 
-<h2>
-ICONWEAR
-</h2>
+    </div>
 
-<p>
-Premium streetwear for the new generation.
-</p>
-
-</div>
-
-
-
-<div class="footer-links">
-
-<h3>
-Quick Links
-</h3>
-
-<a href="#">Home</a>
-
-<a href="#products">Shop</a>
-
-<a href="#categories">Collection</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-
-
-
-<div class="footer-social">
-
-<h3>
-Follow Us
-</h3>
-
-<i class="fa-brands fa-instagram"></i>
-
-<i class="fa-brands fa-facebook"></i>
-
-<i class="fa-brands fa-twitter"></i>
-
-</div>
-
-
-</div>
-
-
-
-<p class="copyright">
-© 2026 ICONWEAR | All Rights Reserved
-</p>
-
+    <p>
+        © 2026 ICONWEAR. ALL RIGHTS RESERVED.
+    </p>
 
 </footer>
-<!-- CART SIDEBAR -->
-
-<div class="cart-sidebar" id="cart-sidebar">
-
-    <div class="cart-header">
-
-        <h2>
-        Your Cart
-        </h2>
-
-        <span onclick="closeCart()">
-        ✖
-        </span>
-
-    </div>
 
 
-    <div id="cart-items">
-
-        <p>
-        Your cart is empty
-        </p>
-
-    </div>
-
-
-    <div class="cart-total">
-
-        Total: ₹<span id="cart-total">0</span>
-
-    </div>
-
-
-    <button class="checkout-btn">
-        CHECKOUT
-    </button>
-
-
-</div>
 <script src="script.js"></script>
 
 </body>
-
 </html>
