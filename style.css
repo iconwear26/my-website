@@ -1205,4 +1205,91 @@ nav .icon{
 
     border-radius:25px;
 
+}.cart-product{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:10px;
+padding:15px 0;
+border-bottom:1px solid #ddd;
+
+}
+
+.cart-product img{
+
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:8px;
+
+}
+
+.cart-product h4{
+
+font-size:15px;
+margin-bottom:5px;
+
+}
+
+.cart-product p{
+
+font-weight:bold;
+
+}
+
+.cart-product button{
+
+background:red;
+color:white;
+border:none;
+padding:8px 10px;
+cursor:pointer;
+border-radius:6px;
+
+}.cart-info{
+
+    flex:1;
+    margin-left:15px;
+
+}
+
+.qty{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+
+}
+
+.qty button{
+
+    width:30px;
+    height:30px;
+    border:none;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+.qty span{
+
+    font-weight:bold;
+    min-width:20px;
+    text-align:center;
+
+}
+
+.remove-btn{
+
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 10px;
+    border-radius:5px;
+    cursor:pointer;
+
 }
